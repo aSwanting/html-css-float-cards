@@ -21,7 +21,7 @@ body {
 
     max-width: 1200px;
     margin: 0 auto;
-    padding-inline: 50px;
+    padding-inline: 30px;
 }
 
 .main-card__title, 
@@ -51,11 +51,11 @@ body {
 .col {
     
     float: left;
-    width: calc(92%/3);
+    width: calc((100% - 40px)/3);
     color: white;
     background-color: #0F0E17;
-    margin-right: 4%;
-    margin-bottom: 5%;   
+    margin-right: 20px;
+    margin-bottom: 30px;   
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -74,27 +74,27 @@ body {
 .member-foto {
     float: left;
     vertical-align: middle;
-    height: 100px;    
+    height: 85px;    
     margin-right: 20px;
 }
 
 .member-info {
-    line-height: 25px;
-    padding-top: 12px;
+    line-height: 22px;
+    padding-top: 9px;
 }
 
 .member-name {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
 }
 
 .member-role {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .member-email {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #4cafe9;
 }
@@ -112,12 +112,12 @@ body {
 
 .col:not(:hover) {
     transform: scale(100%) rotate(0);
-    transition: all 500ms;
+    transition: all 400ms;
 }
 
 .col:hover {
-    transform: scale(110%) rotate(-2deg);
-    transition: all 500ms;
+    transform: scale(105%) rotate(-0.5deg);
+    transition: all 400ms;
 }
 
 
