@@ -11,6 +11,19 @@ ul, li, menu {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
+figure img {
+	display: block;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
+}
 /* MAIN STYLE */
 
 body {
@@ -51,11 +64,11 @@ body {
 .col {
     
     float: left;
-    width: calc((100% - 40px)/3);
+    width: calc((100% - 80px)/3);
     color: white;
     background-color: #0F0E17;
-    margin-right: 20px;
-    margin-bottom: 30px;   
+    margin-right: 40px;
+    margin-bottom: 40px;   
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -71,30 +84,48 @@ body {
 
 /* TABLE CARD STYLE */
 
-.member-foto {
+/* .member-foto {
     float: left;
-    vertical-align: middle;
-    height: 85px;    
+    height: 100px;
+    width: 100px;    
     margin-right: 20px;
 }
 
-.member-info {
+.member-info * {
     line-height: 22px;
     padding-top: 9px;
 }
+ */
+
+ .member-foto,
+ .member-info {
+    float: left;
+ }
+
+ .member-foto {
+    width: 100px;
+ }
+
+ .member-info {
+    padding: 10px 20px;
+ }
+
+ .member-info *:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
 .member-name {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .member-role {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .member-email {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: #4cafe9;
 }
@@ -129,7 +160,15 @@ body {
 
 .debug .col {
     min-height:100px;
-    border: 1px solid magenta;
+    background-color: #6f817d;
+}
+
+.debug figure {
+    background-color: #E53170;
+}
+
+.debug .member-info {
+    background-color: #31e5b8;
 }
 
 
